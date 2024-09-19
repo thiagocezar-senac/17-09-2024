@@ -79,3 +79,107 @@
 .stretch .box{
     height: auto;
 }
+
+.gap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid violet;
+    padding: 10px;
+    gap: 10px;
+}
+
+.gap .box {
+    width: 32%;
+}
+
+.order {
+    display: flex;
+}
+
+#three {
+    order: 3;
+}
+
+#one {
+    order: 1;
+}
+
+#two {
+    order: 2;
+}
+
+.grow {
+    display: flex;
+}
+
+.grow .box {
+    flex: 1;
+}
+
+.grow .big {
+    flex: 2;
+}
+
+.basis {
+    display: flex;
+}
+
+.basis .box {
+    flex-basis: 20px;
+}
+
+.basis .big {
+    flex-grow: 1;
+}
+
+.shrink {
+    display: flex;
+    border: 2px solid #ccc;
+    padding: 10px;
+    gap: 10px;
+}
+
+.shrink .box {
+    background-color: lightblue;
+    height: 100px;
+    flex-grow: 1;
+    flex-basis: 250px;
+    width: auto;
+    flex-shrink: 1;
+}
+
+.shrink .small {
+    flex-shrink: 2;
+    background-color: lightcoral;
+}
+
+.shorthand {
+    display: flex;
+    border: 2px solid #ccc;
+    padding: 10px;
+    gap: 10px;
+}
+
+.shorthand .box {
+    background-color: lightblue;
+    height: 100px;
+    width: auto;
+    flex: 1 1 50px;
+}
+
+.shorthand .different {
+    background-color: lightcoral;
+    flex: 3 1 400px;
+}
+
+.auto-aligment {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid blue;
+}
+
+.auto-aligment .different {
+    align-self: center;
+}
